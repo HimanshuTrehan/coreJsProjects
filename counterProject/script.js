@@ -8,15 +8,32 @@ const decrementButton = document.getElementById('decrement-button')
 const inputbox = document.getElementById('increment-text');
 const resetbtn = document.getElementById('reset-btn');
 
+inputbox.value = 1
+
+// it uses element bubbling as the third paramter is false 
+
+/* eventpropogation means that we are moving from bottom to top
+
+if the third eleemnt is false it creates bubbling effect 
+
+example we habe 2 elements 
+
+1 is top container and other is element inside conatiner 
+
+if we perform click an the value is false 
+
+then first the  output of inside container prints and then the top container output prints
+
+if the value is true then inverse is happening
 
 
+e. propogation is used to stop bubbling
 
-    inputbox.value = 1
 
-
+*/
 incrementButton.addEventListener('click',() =>{
     incrementCounterValue()
-})
+},false)
 
 resetbtn.addEventListener("click",() =>{
     resetCounter()

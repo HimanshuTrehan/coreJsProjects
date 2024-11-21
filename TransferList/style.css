@@ -1,0 +1,58 @@
+body{
+    background-color: #212121;
+    color: white;
+    margin-top: 50px;  /* Remove default margin */
+    height: 100vh; /* Make the body take the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center;
+}
+
+#box-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Arrange elements vertically */
+    align-items: center; 
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#box1,#box3{
+ width: 30%;
+ height: 100%;
+ border-color: white;
+ border-width: 2px;
+ border-style: solid;
+
+ 
+}
+
+#box2{
+    width: 10%;
+    height: 100%;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+
+
+button{
+ 
+    width: 30%;
+}
+
+li{
+    padding: 10px 5px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
